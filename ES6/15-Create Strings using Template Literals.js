@@ -8,8 +8,11 @@ function makeList(arr) {
     // Only change code below this line
     const failureItems = [];
     // Only change code above this line
-
+    for (let i = 0; i < arr.length; i++) {
+        failureItems.push(  '<li class="text-warning">${arr[i]}</li>');
+    }
     return failureItems;
 }
 
 const failuresList = makeList(result.failure);
+console.log(failuresList);
